@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="index.css">
+  <title>Personal PortFolio</title>
+</head>
+
+<body>
+  <!-- <h1>This is personal portfolio</h1> -->
+
+  <nav class="mb-3 container navbar navbar-expand-md navbar-light bg-light " data-aos="fade-down-left"
+    data-aos-duration="1000">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">My portfolio</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact" tabindex="1" aria-disabled="false"
+              data-bs-toggle="button btn-outline-secondary">Contact Me</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success">Download Resume</button>
+      </div>
+    </div>
+  </nav>
+  <!-- My Projects -->
+  <div class="coming container w-100 mx-auto text-center" data-aos="fade-left" data-aos-duration="2000">
+    <h1 class="text-center">My Projects</h1>
+    <div class="row">
+      <div class="card col-lg m-2" style="width: 25rem;" data-aos="fade-up" data-aos-duration="2000">
+        <div class="card-body">
+          <h5 class="card-title">Be Smart with Older</h5>
+          <h6 class="card-subtitle mb-2 text-muted">A website for buy sell</h6>
+          <p class="card-text">A MERN Project with React JS, Firebase,The Server Host in vercel</p>
+          <a target="_blank" href="https://assignment-12-1ac17.web.app/" class="card-link btn-sm btn-outline-secondary">Live Site</a>
+          <a target="_blank" href="https://github.com/almubin78/TryToMakeAReSaleWebsite" class="card-link btn-sm btn-outline-secondary">Github Client</a>
+          <a target="_blank" href="https://github.com/almubin78/Buy-sell-server" class="card-link btn-sm btn-outline-secondary">Github Server</a>
+        </div>
+      </div>
+      <div class="card col-lg m-2" style="width: 25rem;" data-aos="fade-left" data-aos-duration="2000">
+        <div class="card-body">
+          <h5 class="card-title">Keep Eye in Every Second</h5>
+          <h6 class="card-subtitle mb-2 text-muted">A website for Daily Rutine</h6>
+          <p class="card-text">A MERN Project with React JS, Firebase,The Server Host in vercel</p>
+          <a href="loading.html" target="_blank" class="card-link btn-sm btn-outline-secondary">Live Site</a>
+          <a target="_blank" href="https://github.com/almubin78/rutin-client" class="card-link btn-sm btn-outline-secondary">Github Client</a>
+          <a target="_blank" href="https://github.com/almubin78/rutin-server" class="card-link btn-sm btn-outline-secondary">Github Server</a>
+        </div>
+      </div>
+      <div class="card col-lg m-2" style="width: 25rem;" data-aos="fade-up" data-aos-duration="2000">
+        <div class="card-body">
+          <h5 class="card-title">Success Model School</h5>
+          <h6 class="card-subtitle mb-2 text-muted">A website for buy sell</h6>
+          <p class="card-text">A MERN Project with React JS, Firebase,The Server Host in vercel</p>
+          <a href="loading.html" target="_blank" class="card-link btn-sm btn-outline-secondary">Live Site</a>
+          <a target="_blank" href="https://github.com/almubin78/success-model-school-client" class="card-link btn-sm btn-outline-secondary">Github Client</a>
+          <a target="_blank" href="https://github.com/almubin78/success-model-school-server" class="card-link btn-sm btn-outline-secondary">Github Server</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact Me -->
+  <div id="contact" class="container w-75 mx-auto border">
+    <h1 class="text-center">Contact Me</h1>
+    <div class="mb-3 w-50 mx-auto">
+      <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Josef Pristoly">
+    </div>
+    <div class="mb-3 w-50 mx-auto">
+      <label for="exampleFormControlInput1" class="form-label">Enter Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <button class="btn btn-outline-primary">Send</button>
+  </div>
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
