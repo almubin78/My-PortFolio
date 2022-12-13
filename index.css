@@ -1,3 +1,11 @@
 a{
     text-decoration: none;
 }
+.hero-container{
+    background-image: url(img/Developer.webp);
+    height: 90vh;
+    width:75%;
+    margin:0 auto;
+    background-size: cover;
+    background-position: center;
+}
