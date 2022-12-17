@@ -13,26 +13,36 @@
   <title>Personal PortFolio</title>
 </head>
 
-<body>
+<body class="">
   <!-- <h1>This is personal portfolio</h1> -->
+
   <!-- nav section -->
   <nav class="mb-3 container navbar navbar-expand-md navbar-light bg-light rounded" data-aos="fade-down-left"
     data-aos-duration="1000">
-    <div class="container-fluid">
+    <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">My portfolio</a>
+      <div class="collapse navbar-collapse container" id="navbarTogglerDemo01">
+        <img class="rounded " style="width:50px" src="img/logo.svg" alt="">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link  btn-sm btn-outline-success" aria-current="page" href="#">Home</a>
+            <a class="nav-link active ms-5" href="/" tabindex="1" aria-disabled="false"
+              data-bs-toggle="button ms-5 btn-sm btn-outline-success">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#projects" tabindex="1" aria-disabled="false"
+              data-bs-toggle="button ms-5 btn-sm btn-outline-success">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#contact" tabindex="1" aria-disabled="false"
-              data-bs-toggle="button btn-outline-secondary">Contact Me</a>
+              data-bs-toggle="button btn-outline-success">Contact Me</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link active" href="used.html" tabindex="1" aria-disabled="false"
+              data-bs-toggle="button btn-outline-success">Used Tecnology</a>
+          </li> -->
         </ul>
 
         <a download href="almubin-resume.pdf" class="active btn-sm btn-outline-success">Download Resume</a>
@@ -41,49 +51,93 @@
   </nav>
 
   <!-- landing section -->
-  <div class="hero-container container">
+  <div class="hero container">
+    <div class="detais container bg-img">
+      <h1 class="my-name">I'm Al-Mobin </h1>
+      <h1><span class="auto-type"></span></h1>
+      <p >This is my simple portfolio website to show
 
+        <br>my skills!! Please visit <span>My Project</span> Section.
+      </p>
+      <a download href="almubin-resume.pdf" class="active btn-sm btn-outline-success">Download Resume</a>
+      <div class="images " data-aos="fade-down-left" data-aos-duration="1000">
+        <img class="shape" src="img/shape.png" alt="">
+        <img class="myimg" src="img/my img.png" alt="">
+      </div>
+    </div>
   </div>
 
+
   <!-- My Projects -->
-  <div class="mt-5 coming container w-100 mx-auto text-center" data-aos="fade-left" data-aos-duration="2000">
+  <div id="projects" class="mt-5 p-5 coming container align-middle w-850" data-aos="fade-left" data-aos-duration="2000">
     <h1 class="text-center">My Projects</h1>
-    <div class="row">
-      <div class="card col-lg m-2 shadow" style="width: 25rem;" data-aos="fade-up" data-aos-duration="2000">
+    <div class="row ">
+      <div class="card col-md-6 col-lg-4 col-sm-12 m-2 shadow" style="width: 25rem;" data-aos="fade-up"
+        data-aos-duration="2000">
         <div class="card-body">
-          <h5 class="card-title">Be Smart with Older</h5>
+          <h5 class="card-title relative">Be Smart with Older <sup class="text-success border px-1 rounded">live</sup></h5>
           <h6 class="card-subtitle mb-2 text-muted">A website for buy sell</h6>
           <p class="card-text">A MERN Project with React JS, Firebase,The Server Host in vercel</p>
-          <a target="_blank" href="https://assignment-12-1ac17.web.app/"
-            class="card-link active btn-sm btn-outline-secondary">Live Site</a>
-          <a target="_blank" href="https://github.com/almubin78/TryToMakeAReSaleWebsite"
-            class="card-link active btn-sm btn-outline-secondary">Github Client</a>
-          <a target="_blank" href="https://github.com/almubin78/Buy-sell-server"
-            class="card-link active btn-sm btn-outline-secondary">Github Server</a>
+          <li>UI: <span>Bootstrap</span></li>
+          <li>BackEnd: <span>MERN</span></li>
+          <div class="d-flex justify-content-evenly mt-3">
+            <a href="https://assignment-12-1ac17.web.app/" target="_blank"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Website Link</a>
+            <a target="_blank" href="https://github.com/almubin78/TryToMakeAReSaleWebsite"
+              class="card-link border shadow-lg p-2 btn-sm btn-outline-success">Github Client</a>
+          </div>
+          <div class="d-flex justify-content-evenly mt-4">
+            <a target="_blank" href="https://github.com/almubin78/Buy-sell-server"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Github Server</a>
+            <a target="_blank" href="https://github.com/almubin78/Buy-sell-server"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Github Server</a>
+          </div>
+          
+
         </div>
       </div>
-      <div class="card col-lg m-2 shadow" style="width: 25rem;" data-aos="fade-left" data-aos-duration="2000">
+      <div class="card  col-md-6 col-lg-4 col-sm-12 m-2 shadow" style="width: 25rem;" data-aos="fade-left"
+        data-aos-duration="2000">
         <div class="card-body">
-          <h5 class="card-title">Keep Eye in Every Second</h5>
+          <h5 class="card-title">Keep Eye in Every Second <sup class="text-warning border px-1 rounded">Coming soon</sup></h5>
           <h6 class="card-subtitle mb-2 text-muted">A website for Daily Rutine</h6>
-          <p class="card-text">A MERN Project with React JS, Firebase,The Server Host in vercel</p>
-          <a href="loading.html" target="_blank" class="card-link active btn-sm btn-outline-secondary">Live Site</a>
-          <a target="_blank" href="https://github.com/almubin78/rutin-client"
-            class="card-link active btn-sm btn-outline-secondary">Github Client</a>
-          <a target="_blank" href="https://github.com/almubin78/rutin-server"
-            class="card-link active btn-sm btn-outline-secondary">Github Server</a>
+          <p class="card-text">Purpose:Create functionality with day,month,year for specific time</p>
+          <li>UI: <span>React-Bootstrap</span></li>
+          <li>BackEnd: <span>MERN</span></li>
+          <div class="d-flex justify-content-evenly mt-3">
+            <a href="loading.html" target="_blank"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Website Link</a>
+            <a target="_blank" href="https://github.com/almubin78/rutin-client"
+              class="card-link border shadow-lg p-2 btn-sm btn-outline-success">Github Client</a>
+          </div>
+          <div class="d-flex justify-content-evenly mt-4">
+            <a target="_blank" href="https://github.com/almubin78/rutin-server"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Github Server</a>
+            <a target="_blank" href="https://github.com/almubin78/rutin-server"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Github Server</a>
+          </div>
         </div>
       </div>
-      <div class="card col-lg m-2 shadow" style="width: 25rem;" data-aos="fade-up" data-aos-duration="2000">
+      <div class="card  col-md-6 col-lg-4 col-sm-12 m-2 shadow" style="width: 25rem;" data-aos="fade-up"
+        data-aos-duration="2000">
         <div class="card-body">
-          <h5 class="card-title">Success Model School</h5>
-          <h6 class="card-subtitle mb-2 text-muted">A website for buy sell</h6>
-          <p class="card-text">A MERN Project with React JS, Firebase,The Server Host in vercel</p>
-          <a href="loading.html" target="_blank" class="card-link active btn-sm btn-outline-secondary">Live Site</a>
-          <a target="_blank" href="https://github.com/almubin78/success-model-school-client"
-            class="card-link active btn-sm btn-outline-secondary">Github Client</a>
-          <a target="_blank" href="https://github.com/almubin78/success-model-school-server"
-            class="card-link active btn-sm btn-outline-secondary">Github Server</a>
+          <h5 class="card-title">Success Model School <sup class="text-warning border px-1 rounded">Working ...</sup></h5>
+          <h6 class="card-subtitle mb-2 text-muted">A website for a local School</h6>
+          <p class="card-text">A MERN Project with React JS, Firebase, Mongodb</p>
+          <li>UI: <span>Tailwind-DaisyUI</span></li>
+          <li>BackEnd: <span>MERN</span></li>
+          <div class="d-flex justify-content-evenly mt-3">
+            <a href="https://success-model-school.web.app" target="_blank"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Website Link</a>
+            <a target="_blank" href="https://github.com/almubin78/success-model-school-client"
+              class="card-link border shadow-lg p-2 btn-sm btn-outline-success">Github Client</a>
+          </div>
+          <div class="d-flex justify-content-evenly mt-4">
+            <a target="_blank" href="https://github.com/almubin78/success-model-school-server"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Github Server</a>
+            <a target="_blank" href="https://github.com/almubin78/success-model-school-server"
+              class="card-link border shadow-lg p-2  btn-sm btn-outline-success">Github Server</a>
+          </div>
         </div>
       </div>
 
@@ -91,9 +145,10 @@
   </div>
 
   <!-- Contact Me -->
-  <div id="contact" class="container w-85 mx-auto border mt-5 rounded" data-aos="fade-down" data-aos-duration="2000">
+  <div id="contact" class="container w-85 mx-auto border mt-5 rounded p-5" data-aos="fade-down"
+    data-aos-duration="2000">
     <h1 class="text-center">Contact Me</h1>
-    <form id="contact" action="https://formsubmit.co/el/muresa" method="POST">
+    <form id="contact" action="https://formsubmit.co/el/muresa" method="POST" reset()>
       <div class="mb-3 w-50 mx-auto">
         <label for="exampleInputEmail1" class="form-label">Entire Your name</label>
         <input type="name" id="name" name="Name" class="form-control" id="exampleInputEmail1" aria-describedby="">
@@ -110,17 +165,19 @@
       </div>
       <div class="mb-3 w-50 mx-auto">
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary other-element">Submit</button>
       </div>
 
     </form>
   </div>
   <!-- footer start -->
   <footer class="container-fluid bg-dark p-5 mt-5 text-white text-center">
-    <h2>U can Reached Out me...</h2>
-    <div class="">
-      <span> <a target="_blank" href="https://twitter.com/myjob6563"><i class="fab fa-twitter-square fs-1 m-3 "></i></a></span>
-      <span><a target="_blank" href="https://www.linkedin.com/in/al-mubin-sarker-b3373021a/"><i class="fab fa-linkedin fs-1 m-3 "></i></a></span>
+    <h2>Try to Reached me out</h2>
+    <div class="" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor=".other-element">
+      <span> <a target="_blank" href="https://twitter.com/myjob6563"><i
+            class="fab fa-twitter-square fs-1 m-3 "></i></a></span>
+      <span><a target="_blank" href="https://www.linkedin.com/in/al-mubin-sarker-b3373021a/"><i
+            class="fab fa-linkedin fs-1 m-3 "></i></a></span>
       <span><a target="_blank" href="https://github.com/almubin78"><i class="fab fa-github fs-1 m-3 "></i></a></span>
     </div>
   </footer>
@@ -131,7 +188,15 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('.auto-type', {
+      strings: ["Full Stack", "Developer"],
+      typeSpeed: 200,
+      backSpeed: 200,
+      loop: true
+    })
+  </script>
   <script>
     AOS.init();
   </script>

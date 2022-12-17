@@ -1,11 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+   
+}
 a{
     text-decoration: none;
 }
-.hero-container{
-    background-image: url(img/Developer.webp);
-    height: 90vh;
-    width:75%;
-    margin:0 auto;
-    background-size: cover;
-    background-position: center;
+a:hover{
+    background-image: linear-gradient(45deg,rgb(225, 187, 115) 25%, rgb(73, 73, 232) 100%);
+    transition: 0.2s ease-in;
 }
+
+
+.hero{
+    position: relative;
+}
+
+.detais{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.detais h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+span{
+    color: rgb(4, 154, 204);
+}
+.detais p{
+    color: #555;
+    line-height: 25px;
+    font-family: monospace;
+}
+.images{
+    width:50%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right:100px;
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .images{
+        display: block;
+    }
+  }
+.images img{
+    height: 100%;
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.images:hover .shape{
+    bottom:10px;
+}
+.images:hover .myimg{
+    left:45%;
+}
+.my-name{
+    font-family: fantasy;
+}
+.card{
+    
+    background-image: linear-gradient(45deg,rgb(234, 224, 207) 25%, rgb(73, 73, 232) 100%);
+}
+
